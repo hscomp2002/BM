@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	ImageButton imageButton;
+	ImageButton lightButton,fireButton;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +27,26 @@ public class MainActivity extends Activity {
 	}
 	public void addListenerOnButton() {
 		 
-		imageButton = (ImageButton) findViewById(R.id.lightButton);
-		//imageButton.setOnClickListener( );
-		imageButton.setOnClickListener(new OnClickListener() {
+		lightButton = (ImageButton) findViewById(R.id.lightButton);
+		lightButton.setOnClickListener(new OnClickListener() {
  
 			@Override
 			public void onClick(View arg0) {
  
 			   Toast.makeText(MainActivity.this,
-				"ImageButton is clicked!", Toast.LENGTH_SHORT).show();
+				"Lights is clicked!", Toast.LENGTH_SHORT).show();
+ 
+			}
+ 
+		});
+		fireButton = (ImageButton) findViewById(R.id.fireButton);
+		fireButton.setOnClickListener(new OnClickListener() {
+ 
+			@Override
+			public void onClick(View arg0) {
+ 
+			   Toast.makeText(MainActivity.this,
+				"Fires is clicked!", Toast.LENGTH_SHORT).show();
  
 			}
  

@@ -22,6 +22,6 @@
         android:layout_alignTop="@+id/lightButton"
         android:layout_toRightOf="@+id/lightButton"
         android:contentDescription="@string/hello_world"
-        android:src="@drawable/lights" />
+        android:src="@drawable/fire" />
 
 </RelativeLayout>
