@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.gcom.bm.LightActivity"
+            android:label="@string/title_activity_light" >
+        </activity>
+        <activity
+            android:name="com.gcom.bm.FireActivity"
+            android:label="@string/title_activity_fire" >
+        </activity>
     </application>
 
 </manifest>

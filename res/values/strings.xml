@@ -4,5 +4,7 @@
     <string name="app_name">BM</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_light">LightActivity</string>
+    <string name="title_activity_fire">FireActivity</string>
 
 </resources>

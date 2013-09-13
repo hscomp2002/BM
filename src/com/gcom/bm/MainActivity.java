@@ -2,6 +2,7 @@ package com.gcom.bm;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,12 +30,15 @@ public class MainActivity extends Activity {
 		 
 		lightButton = (ImageButton) findViewById(R.id.lightButton);
 		lightButton.setOnClickListener(new OnClickListener() {
- 
+			
 			@Override
 			public void onClick(View arg0) {
  
 			   Toast.makeText(MainActivity.this,
 				"Lights is clicked!", Toast.LENGTH_SHORT).show();
+			   Intent intent = new Intent();
+               intent.setClass(MainActivity.this, LightActivity.class);
+               startActivity(intent);
  
 			}
  
@@ -47,7 +51,9 @@ public class MainActivity extends Activity {
  
 			   Toast.makeText(MainActivity.this,
 				"Fires is clicked!", Toast.LENGTH_SHORT).show();
- 
+			   Intent intent = new Intent();
+               intent.setClass(MainActivity.this, FireActivity.class);
+               startActivity(intent);
 			}
  
 		});
